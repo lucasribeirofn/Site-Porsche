@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Porsche Next;
+    src: url(font/porsche-next-w-la-regular.min.b8f1c203bd2ac5334247025236ba8d86.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-container {
+    height: 100vh;
+    width: 100%;
+    font-family: "Porsche Next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
+}
+
+#back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+header {
+    height: 10%;
+    width: 100%;
+    position: relative;
+    padding-top: 25px;
+    background: linear-gradient(to bottom, rgba(31, 31, 31, 0.9) 0%, rgba(31, 31, 31, 0.9) 20%, rgba(31, 31, 31, 0.852589) 26.67%, rgba(32, 32, 32, 0.768225) 33.33%, rgba(33, 33, 33, 0.668116) 40%, rgba(34, 34, 34, 0.557309) 46.67%, rgba(35, 35, 35, 0.442691) 53.33%, rgba(36, 36, 36, 0.331884) 60%, rgba(37, 37, 37, 0.231775) 66.67%, rgba(38, 38, 38, 0.147411) 73.33%, rgba(39, 39, 39, 0.0816599) 80%, rgba(39, 39, 39, 0.03551) 86.67%, rgba(39, 39, 39, 0.0086472) 93.33%, rgba(39, 39, 39, 0) 100%);
+    z-index: 1;   
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    margin: auto;
+    width: 68%;
+    position: relative;
+    z-index: 2;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    font-size: 0.9em;
+    padding-left: 3px;
+}
+
+#svg-porsche {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#conteudo-main {
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 90%;
+}
+
+#saiba-mais {
+    color: #fff;
+    border-color: #fff;
+    border: 1 1 1;
+}
+
+/* ---------------------------------------------------------------------------------------- */
