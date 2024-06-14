@@ -11,7 +11,7 @@
 
 #main-container {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     font-family: "Porsche Next", "Arial Narrow", Arial, "Heiti SC", SimHei, sans-serif;
 }
 
@@ -39,7 +39,7 @@ nav {
     align-items: center;
     color: #fff;
     margin: auto;
-    width: 68%;
+    width: 68%; /* testar 90% em todos com 68 para ver em menores telas e arrumar na margem*/
     position: relative;
     z-index: 2;
 }
@@ -69,13 +69,77 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 90%;
+    height: 80%;
+    width: 68%;
+    margin: auto;
 }
 
+#conteudo1 {
+    margin-left: 102px;
+}
+
+#conteudo1 > h1 {
+    font-size: 7.5em;
+    margin-bottom: 25px;
+    font-weight: normal;
+    margin: 0;
+    margin-top: -45px;
+}
+
+
 #saiba-mais {
+    margin-bottom: 13px;
+    margin-left: 102px;
+    margin-top: 30px;
+}
+
+#saiba-mais > a {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 13px 26px;
+    text-decoration: none;
     color: #fff;
-    border-color: #fff;
-    border: 1 1 1;
+}
+
+#saiba-mais > a:hover {
+    border-color: #999999;
+    background-color: #83838360;
+}
+
+footer {
+    position: relative;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 68%;
+    margin: auto;
+}
+
+#prox-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#prox-container:hover {
+    background-color: #83838360;
+    border-radius: 12px;
+    padding: 0px 12px;
+}
+
+#pause-video {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 11px 13px;
+}
+
+#pause-video:hover {
+    border-color: #999999;
+    background-color: #83838360;
 }
 
 /* ---------------------------------------------------------------------------------------- */
